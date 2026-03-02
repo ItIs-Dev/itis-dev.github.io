@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Huong dan tao video AI theo dung thu tu trong SoanThao.txt"
+    />
+    <title>HƯỚNG DẪN TẠO VIDEO AI | Skoxz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Chakra+Petch:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/video-ai-guide.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+
+    <header class="topbar">
+      <a class="brand" href="../index.html">Skoxz</a>
+      <div class="top-actions">
+        <a class="chip-link" href="../index.html">Trang chủ</a>
+        <a class="chip-link chip-primary" href="https://labs.google/fx/vi/tools/flow" target="_blank" rel="noopener noreferrer">
+          Mở Google Flow
+        </a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero reveal">
+        <p class="eyebrow">SOANTHAO.TXT ORDER</p>
+        <h1>HƯỚNG DẪN TẠO VIDEO AI</h1>
+        <p>Mình sắp đúng theo thứ tự trong file gốc, không đảo bước.</p>
+      </section>
+
+      <section class="step-block reveal">
+        <h2>Chuẩn bị</h2>
+        <ul>
+          <li>1 Ảnh có sẵn</li>
+          <li>1 Tài khoản Gemini Pro</li>
+        </ul>
+      </section>
+
+      <section class="step-block reveal">
+        <h2>Bước cần thiết (nếu chưa làm)</h2>
+        <p>
+          Nhờ AI biên kịch bản. Gửi ảnh có sẵn như ở bước chuẩn bị cho AI và nhập prompt.
+        </p>
+
+        <article class="prompt-card">
+          <div class="prompt-head">
+            <h3>Ví dụ prompt biên kịch bản</h3>
+            <button class="copy-btn" data-copy-target="prompt-script" type="button">Copy</button>
+          </div>
+          <pre id="prompt-script" class="prompt-text">Biên giúp tôi kịch bản hài hước và vui vẻ giữa các nhân vật này nhằm tìm ra hệ phương trình.</pre>
+        </article>
+
+        <article class="prompt-card">
+          <div class="prompt-head">
+            <h3>Nếu bạn thấy ngắn, dùng thêm</h3>
+            <button class="copy-btn" data-copy-target="prompt-extend" type="button">Copy</button>
+          </div>
+          <pre id="prompt-extend" class="prompt-text">Hãy viết dài thêm &lt;thêm các yêu cầu của bạn&gt;</pre>
+        </article>
+      </section>
+
+      <section class="step-block reveal">
+        <h2>Bước 1</h2>
+        <p>
+          Gửi nội dung cho AI và yêu cầu tách thành từng đoạn 6-8 giây.
+        </p>
+        <article class="prompt-card">
+          <div class="prompt-head">
+            <h3>Prompt tách đoạn 6-8 giây</h3>
+            <button class="copy-btn" data-copy-target="prompt-split" type="button">Copy</button>
+          </div>
+          <pre id="prompt-split" class="prompt-text">Hãy tách nội dung sau "&lt;dán nội dung của bạn vào&gt;" thành mỗi đoạn 6-8 giây vì Gemini AI chỉ tạo mỗi video 6-8 giây nên tôi cần chia ra nhiều đoạn.</pre>
+        </article>
+      </section>
+
+      <section class="step-block reveal">
+        <h2>Bước 2</h2>
+        <p>
+          Khóa nhân vật. Vào ChatGPT, Gemini hoặc AI bất kỳ và nhập dòng lệnh sau:
+        </p>
+
+        <article class="prompt-card">
+          <div class="prompt-head">
+            <h3>Prompt khóa nhân vật</h3>
+            <button class="copy-btn" data-copy-target="prompt-lock" type="button">Copy</button>
+          </div>
+          <pre id="prompt-lock" class="prompt-text">Khóa nhân vật, 3 nhân vật cố định và KHÔNG được hoán đổi.
+(1) Bạn A: nam sinh cấp 3 mặc sơ-mi trắng tay ngắn, đứng giữa sát quầy và sát máy POS, đeo dây chuyền bạc + vòng tay bạc, đeo ba lô xanh đậm/navy, không đeo dây sinh viên, luôn nhìn về chị bán vé; bắt buộc Bạn A luôn cầm thẻ bank màu xanh bằng TAY TRÁI và đưa thẻ về phía máy POS khi thanh toán, không cầm điện thoại.
+(2) Bạn B: nam sinh cấp 3 mặc sơ-mi trắng tay ngắn, đứng bên phải của Bạn A và hơi lùi 1 bước, tóc bồng hơn, đeo ba lô xám/đen, bắt buộc đeo dây sinh viên màu đen (lanyard đen) có thẻ ID trong bao đen treo trước ngực, luôn cầm điện thoại bằng hai tay ở ngang bụng, không cầm thẻ bank.
+(3) Chị bán vé: nữ nhân viên mặc áo đen, tóc buộc gọn, đứng góc trái phía trong quầy sau kính và màn hình máy tính, thao tác trên máy tính/nhận thanh toán; không mang ba lô, không đeo lanyard.
+Quy tắc bắt buộc: thẻ bank chỉ thuộc Bạn A tay trái; điện thoại + lanyard đen + thẻ ID chỉ thuộc Bạn B; chị bán vé luôn ở trong quầy bên trái; không đổi vị trí tương đối (A trước gần quầy, B bên phải hơi lùi). Giữ ngoại hình và phụ kiện y hệt suốt toàn video.</pre>
+        </article>
+
+        <p class="note">Lưu ý: để chắc chắn thì bạn nên tự khóa nhân vật bằng cách tự ghi các đặc điểm nhân vật đó.</p>
+      </section>
+
+      <section class="step-block reveal">
+        <h2>Ảnh: &lt;assets/img/image1.png&gt;</h2>
+        <figure class="media-card">
+          <img src="../assets/img/image1.png" alt="Ảnh minh họa bước khóa nhân vật" loading="lazy" />
+          <figcaption>
+            <a href="../assets/img/image1.png" target="_blank" rel="noopener noreferrer">Mở ảnh image1.png</a>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="step-block reveal">
+        <h2>Bước 3</h2>
+        <p>
+          Để tạo video, truy cập link sau:
+          <a href="https://labs.google/fx/vi/tools/flow" target="_blank" rel="noopener noreferrer">https://labs.google/fx/vi/tools/flow</a>
+          và làm theo bên dưới.
+        </p>
+        <p>Các bạn để setting như hình.</p>
+      </section>
+
+      <section class="step-block reveal">
+        <h2>Ảnh: &lt;assets/img/image2.png&gt;</h2>
+        <figure class="media-card">
+          <img src="../assets/img/image2.png" alt="Ảnh minh họa setting" loading="lazy" />
+          <figcaption>
+            <a href="../assets/img/image2.png" target="_blank" rel="noopener noreferrer">Mở ảnh image2.png</a>
+          </figcaption>
+        </figure>
+        <p class="detail-line">
+          Chi tiết: Bạn gắn ảnh video vào Bắt Đầu -> Bạn copy dòng khóa Nhân Vật -> Dán dòng khóa nhân vật vào -> Dán nội dung của đoạn đó.
+        </p>
+      </section>
+
+      <section class="step-block reveal">
+        <h2>Video: &lt;assets/video/video1&gt;</h2>
+        <figure class="media-card">
+          <video controls preload="metadata" src="../assets/video/video1.mp4"></video>
+          <figcaption>
+            <a href="../assets/video/video1.mp4" target="_blank" rel="noopener noreferrer">Mở video1.mp4</a>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="step-block reveal">
+        <h2>Bước 4</h2>
+        <p>Nối nhiều phân đoạn video thành 1 video, xem video bên dưới.</p>
+      </section>
+
+      <section class="step-block reveal">
+        <h2>Video: &lt;assets/video/video2&gt;</h2>
+        <figure class="media-card">
+          <video controls preload="metadata" src="../assets/video/video2.mp4"></video>
+          <figcaption>
+            <a href="../assets/video/video2.mp4" target="_blank" rel="noopener noreferrer">Mở video2.mp4</a>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="step-block reveal final-note">
+        <h2>Hoàn tất</h2>
+        <p>Các bạn cứ lặp đi lặp lại từ bước 3,4 để thành 1 video hoàn chỉnh.</p>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="../assets/js/video-ai-guide.js"></script>
+  </body>
+</html>
